@@ -1,7 +1,7 @@
 dataset=conll2003
 base_model=roberta
 max_seq_len=128
-
+use_gpu=True
 # self-training lc 5-shot
 
 python3 train_lc.py --datapath ../data --dataset ${dataset} --base_model ${base_model} \
